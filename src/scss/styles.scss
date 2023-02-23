@@ -1,2 +1,11 @@
 // Import all of Bootstrap's CSS
 @import "~bootstrap/scss/bootstrap";
+
+@font-face {
+  font-family: "HankenGrotesk";
+  src: url("@fonts/static/HankenGrotesk-Medium.ttf") format("truetype");
+}
+
+body {
+  font-family: "HankenGrotesk";
+}
