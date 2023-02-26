@@ -3,12 +3,43 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap w/ Vite</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Results summary component</title>
   </head>
   <body>
-    <div class="container py-4 px-3 mx-auto">
-      <h1>Hello, Bootstrap and Vite!</h1>
-      <button class="btn btn-primary">Primary button</button>
+    <div class="result">
+      <h2 class="result--heading">Your Result</h2>
+      <div class="result--cycle">
+        <span>76</span>
+        of 100
+      </div>
+      <div class="result--status">Great</div>
+      <div class="result--text">
+        You scored higher than 65% of the people who have taken these tests.
+      </div>
+    </div>
+
+    <div class="summary">
+      <h2 class="summary--heading">Summary</h2>
+      <div class="box--container">
+        <div class="summary--box">Reaction 80 / 100</div>
+        <div class="summary--box">Memory 92 / 100</div>
+        <div class="summary--box">Verbal 61 / 100</div>
+        <div class="summary--box">Visual 72 / 100</div>
+      </div>
+      <button class="continue">Continue</button>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Soe Wai Yan Aung</a>.
     </div>
     <script type="module" src="./js/main.js"></script>
   </body>

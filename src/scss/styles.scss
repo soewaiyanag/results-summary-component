@@ -1,11 +1,24 @@
-// Import all of Bootstrap's CSS
-@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/bootstrap"; // Import all of Bootstrap's CSS
+@import "mixins";
 
 @font-face {
   font-family: "HankenGrotesk";
   src: url("@fonts/static/HankenGrotesk-Medium.ttf") format("truetype");
 }
 
+:root {
+  --clr-pale-blue: hsl(221, 100%, 96%);
+  --clr-light-lavender: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
 body {
-  font-family: "HankenGrotesk";
+  font-family: "HankenGrotesk", sans-serif;
+}
+
+.result {
+  @include gradient();
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
