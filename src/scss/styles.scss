@@ -1,5 +1,4 @@
-@import "~bootstrap/scss/bootstrap"; // Import all of Bootstrap's CSS
-@import "mixins";
+@import "responsive";
 
 @font-face {
   font-family: "HankenGrotesk";
@@ -17,8 +16,35 @@ body {
 }
 
 .result {
-  @include gradient();
+  background-image: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  text-align: center;
+
+  &--circle {
+    display: block;
+    margin-inline: auto;
+    // show the gradient of top 75% of the image
+    background-image: linear-gradient(
+      to bottom,
+      hsla(256, 72%, 46%, 1),
+      hsla(241, 72%, 46%, 0)
+    );
+    border-radius: 50%;
+    height: 10rem;
+    aspect-ratio: 1/1;
+
+    span {
+      display: block;
+    }
+  }
+}
+
+.attribution {
+  text-align: center;
 }
