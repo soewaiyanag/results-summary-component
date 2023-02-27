@@ -26,9 +26,20 @@ body {
   background-position: center;
   text-align: center;
 
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+  color: var(--clr-light-lavender);
+
+  &--status {
+    color: white;
+  }
+
   &--circle {
-    display: block;
+    display: grid;
+    place-content: center;
     margin-inline: auto;
+    gap: 1rem;
     // show the gradient of top 75% of the image
     background-image: linear-gradient(
       to bottom,
@@ -39,8 +50,14 @@ body {
     height: 10rem;
     aspect-ratio: 1/1;
 
-    span {
+    &__big {
       display: block;
+      color: white;
+      font-size: 3.25rem;
+      font-weight: 800;
+    }
+    &__small {
+      opacity: 0.5;
     }
   }
 }
