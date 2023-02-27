@@ -1,8 +1,7 @@
-@import "responsive";
-
 @font-face {
   font-family: "HankenGrotesk";
-  src: url("@fonts/static/HankenGrotesk-Medium.ttf") format("truetype");
+  src: url("@fonts/HankenGrotesk-VariableFont_wght.ttf")
+    format("truetype-variations");
 }
 
 :root {
@@ -16,7 +15,20 @@ body {
   font-size: 18px;
 }
 
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 0 2rem;
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .result {
+  padding: 3rem 1.5rem;
   background-image: linear-gradient(
     to bottom,
     hsl(252, 100%, 67%),
@@ -32,8 +44,18 @@ body {
 
   color: var(--clr-light-lavender);
 
+  // make a gap between elements except the first and last
+  & > *:not(:last-child):not(:first-child) {
+    margin-top: 1.5rem;
+  }
+
   &--status {
     color: white;
+  }
+
+  &--text {
+    margin-top: 1rem;
+    font-variation-settings: "wght" 400;
   }
 
   &--circle {
