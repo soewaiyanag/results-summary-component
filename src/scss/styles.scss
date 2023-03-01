@@ -5,6 +5,10 @@
 }
 
 :root {
+  font-size: 18px;
+}
+
+:root {
   --clr-pale-blue: hsl(221, 100%, 96%);
   --clr-light-lavender: hsl(241, 100%, 89%);
   --clr-dark-gray-blue: hsl(224, 30%, 27%);
@@ -16,7 +20,6 @@
 
 body {
   font-family: "HankenGrotesk", sans-serif;
-  font-size: 18px;
 }
 
 .row {
@@ -123,11 +126,19 @@ body {
   padding: 1rem;
   border-radius: 10px;
 
+  .text {
+    font-size: 1rem;
+    font-variation-settings: "wght" 500;
+  }
+
   $opacity: 0.075;
   &.reaction {
     background-color: hsl(var(--hsl-code-light-red), $opacity);
     &::before {
       content: url("@images/icon-reaction.svg");
+    }
+    .text {
+      color: hsl(var(--hsl-code-light-red));
     }
   }
   &.memory {
@@ -135,17 +146,26 @@ body {
     &::before {
       content: url("@images/icon-memory.svg");
     }
+    .text {
+      color: hsl(var(--hsl-code-orangey-yellow));
+    }
   }
   &.verbal {
     background-color: hsl(var(--hsl-code-green-teal), $opacity);
     &::before {
       content: url("@images/icon-verbal.svg");
     }
+    .text {
+      color: hsl(var(--hsl-code-green-teal));
+    }
   }
   &.visual {
     background-color: hsl(var(--hsl-code-cobalt-blue), $opacity);
     &::before {
       content: url("@images/icon-visual.svg");
+    }
+    .text {
+      color: hsl(var(--hsl-code-cobalt-blue));
     }
   }
 
