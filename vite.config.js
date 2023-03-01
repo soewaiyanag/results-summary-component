@@ -6,6 +6,7 @@ export default {
     alias: {
       "@node_modules": path.resolve(__dirname, "node_modules"),
       "@fonts": path.resolve(__dirname, "assets/fonts"),
+      "@images": path.resolve(__dirname, "assets/images"),
     },
   },
   server: {
