@@ -120,6 +120,7 @@ body {
 }
 
 .flex-item {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 0.8rem;
@@ -135,36 +136,24 @@ body {
   $opacity: 0.075;
   &.reaction {
     background-color: hsl(var(--hsl-code-light-red), $opacity);
-    &::before {
-      content: url("@images/icon-reaction.svg");
-    }
     .text {
       color: hsl(var(--hsl-code-light-red));
     }
   }
   &.memory {
     background-color: hsl(var(--hsl-code-orangey-yellow), $opacity);
-    &::before {
-      content: url("@images/icon-memory.svg");
-    }
     .text {
       color: hsl(var(--hsl-code-orangey-yellow));
     }
   }
   &.verbal {
     background-color: hsl(var(--hsl-code-green-teal), $opacity);
-    &::before {
-      content: url("@images/icon-verbal.svg");
-    }
     .text {
       color: hsl(var(--hsl-code-green-teal));
     }
   }
   &.visual {
     background-color: hsl(var(--hsl-code-cobalt-blue), $opacity);
-    &::before {
-      content: url("@images/icon-visual.svg");
-    }
     .text {
       color: hsl(var(--hsl-code-cobalt-blue));
     }

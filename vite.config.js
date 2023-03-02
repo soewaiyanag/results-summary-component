@@ -12,5 +12,9 @@ export default {
   server: {
     port: 8080,
     hot: true,
+    fs: {
+      strict: false,
+      allow: ["."],
+    },
   },
 };
