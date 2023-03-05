@@ -108,7 +108,8 @@ body {
   gap: 1rem;
   padding: 0 1.5rem;
   &--heading {
-    font-variation-settings: "wght" 500;
+    font-variation-settings: "wght" 600;
+    color: var(--clr-dark-gray-blue);
   }
 }
 
@@ -161,9 +162,49 @@ body {
 
   span {
     margin-left: auto;
+    color: var(--clr-dark-gray-blue);
+    font-variation-settings: "wght" 500;
+  }
+
+  .total {
+    color: var(--clr-dark-gray-blue);
+    opacity: 0.5;
+  }
+}
+
+.continue {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  padding: 1rem;
+  font-variation-settings: "wght" 450;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: white;
+  background-color: var(--clr-dark-gray-blue);
+  transition: background-color 50ms ease-in-out;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image: linear-gradient(
+      to bottom,
+      hsl(252, 100%, 67%),
+      hsl(241, 81%, 54%)
+    );
+  }
+
+  &:hover {
+    background-color: transparent;
   }
 }
 
 .attribution {
+  margin: 2rem 2rem 1rem;
   text-align: center;
 }
