@@ -1,0 +1,25 @@
+@media (min-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    padding-bottom: 0;
+
+    /* since the .attribute have a margin-top of 2rem and
+    margin-bottom 2rem which is total of 4rem vertically,
+    we need to add margin-top: 4rem to make it perfectly center */
+    margin-top: 4rem;
+  }
+  .result {
+    border-radius: var(--bd-radius);
+  }
+  .summary {
+    padding: 3rem 2.5rem;
+  }
+}
