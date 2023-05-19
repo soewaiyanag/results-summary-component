@@ -12,70 +12,74 @@
     <title>Frontend Mentor | Results summary component</title>
   </head>
   <body>
-    <div class="container">
-      <div class="result">
-        <h2 class="result--heading">Your Result</h2>
-        <div class="result--circle">
-          <span class="result--circle__big">76</span>
-          <span class="result--circle__small">of 100</span>
-        </div>
-        <div class="result--status">Great</div>
-        <div class="result--text">
-          You scored higher than 65% of the people who have taken these tests.
-        </div>
-      </div>
+    <main>
+      <div class="container">
+        <section class="result">
+          <h2 class="result--heading">Your Result</h2>
+          <div class="result--circle">
+            <span class="result--circle__big">76</span>
+            <span class="result--circle__small">of 100</span>
+          </div>
+          <div class="result--status">Great</div>
+          <p class="result--text">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </section>
 
-      <div class="summary">
-        <h2 class="summary--heading">Summary</h2>
-        <div class="flex-container">
-          <div class="flex-item reaction">
-            <img src="/assets/images/icon-reaction.svg" alt="reaction icon" />
-            <p class="text">Reaction</p>
-            <span>
-              80
-              <span class="total">/ 100</span>
-            </span>
+        <section class="summary">
+          <h2 class="summary--heading">Summary</h2>
+          <div class="flex-container">
+            <div class="flex-item reaction">
+              <img src="/assets/images/icon-reaction.svg" alt="reaction icon" />
+              <p class="text">Reaction</p>
+              <span>
+                80
+                <span class="total">/ 100</span>
+              </span>
+            </div>
+            <div class="flex-item memory">
+              <img src="/assets/images/icon-memory.svg" alt="memory icon" />
+              <p class="text">Memory</p>
+              <span
+                >92
+                <span class="total">/ 100</span>
+              </span>
+            </div>
+            <div class="flex-item verbal">
+              <img src="/assets/images/icon-verbal.svg" alt="verbal icon" />
+              <p class="text">Verbal</p>
+              <span
+                >61
+                <span class="total">/ 100</span>
+              </span>
+            </div>
+            <div class="flex-item visual">
+              <img src="/assets/images/icon-visual.svg" alt="visual icon" />
+              <p class="text">Visual</p>
+              <span
+                >72
+                <span class="total">/ 100</span>
+              </span>
+            </div>
           </div>
-          <div class="flex-item memory">
-            <img src="/assets/images/icon-memory.svg" alt="memory icon" />
-            <p class="text">Memory</p>
-            <span
-              >92
-              <span class="total">/ 100</span>
-            </span>
-          </div>
-          <div class="flex-item verbal">
-            <img src="/assets/images/icon-verbal.svg" alt="verbal icon" />
-            <p class="text">Verbal</p>
-            <span
-              >61
-              <span class="total">/ 100</span>
-            </span>
-          </div>
-          <div class="flex-item visual">
-            <img src="/assets/images/icon-visual.svg" alt="visual icon" />
-            <p class="text">Visual</p>
-            <span
-              >72
-              <span class="total">/ 100</span>
-            </span>
-          </div>
-        </div>
-        <button class="button">Continue</button>
+          <button class="button">Continue</button>
+        </section>
       </div>
-    </div>
+    </main>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by
-      <a
-        href="https://www.frontendmentor.io/profile/soewaiyanag"
-        target="_blank"
-        >Soe Wai Yan Aung</a
-      >.
-    </div>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://www.frontendmentor.io/profile/soewaiyanag"
+          target="_blank"
+          >Soe Wai Yan Aung</a
+        >.
+      </div>
+    </footer>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
