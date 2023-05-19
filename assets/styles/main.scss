@@ -34,6 +34,10 @@ body {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px;
 }
 
+section > h2 {
+  font-size: 1.075rem;
+}
+
 .result {
   padding: 3rem 2.5rem;
   background-image: linear-gradient(
@@ -85,7 +89,7 @@ body {
       hsla(241, 72%, 46%, 0)
     );
     border-radius: 50%;
-    height: 8rem;
+    height: 9rem;
     aspect-ratio: 1/1;
 
     &__big {
@@ -134,7 +138,7 @@ body {
     font-variation-settings: "wght" 500;
   }
 
-  $opacity: 0.075;
+  $opacity: 0.065;
   &.reaction {
     background-color: hsl(var(--hsl-code-light-red), $opacity);
     .text {
